@@ -1,0 +1,13 @@
+#etch-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-box {
+    border-style: solid;
+    margin: 2px;
+    border-width: 2px;
+    border-color: black;
+    height: 100px;
+    width: 250px;
+}
