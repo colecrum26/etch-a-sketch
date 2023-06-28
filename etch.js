@@ -1,9 +1,9 @@
 const ec = document.getElementById("etch-container");
 const input = document.getElementById("input");
-let numBoxes = input.value;
+let numBoxes;
 
 input.addEventListener("change", (e) => {
-    numBoxes = e.target.value;
+    numBoxes = parseInt(e.target.value);
 });
 
 function sketch(numBoxes) {
