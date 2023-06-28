@@ -1,4 +1,6 @@
 const ec = document.getElementById("etch-container");
+const input = document.getElementById("input");
+
 let numBoxes = 16;
 
 function sketch(numBoxes) {
@@ -8,7 +10,7 @@ function sketch(numBoxes) {
     ec.appendChild(box);
 
     const color = () => {box.style.backgroundColor = '#000'};
-    box.addEventListener('mouseover', color)
+    box.addEventListener('click', color)
   }
 }
 

@@ -11,9 +11,6 @@ body {
     align-items: center;
     margin-bottom: 28px;
 }
-#input {
-    display: flex;
-}
 
 #etch-container {
     display: flex;
