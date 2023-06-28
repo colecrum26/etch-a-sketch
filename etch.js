@@ -1,7 +1,10 @@
 const ec = document.getElementById("etch-container");
 const input = document.getElementById("input");
+let numBoxes = input.value;
 
-let numBoxes = 16;
+input.addEventListener("change", (e) => {
+    numBoxes = e.target.value;
+});
 
 function sketch(numBoxes) {
   for (let i = 0; i < numBoxes; i++) {
@@ -9,8 +12,8 @@ function sketch(numBoxes) {
     box.classList.add("grid-box");
     ec.appendChild(box);
 
-    const color = () => {box.style.backgroundColor = '#000'};
-    box.addEventListener('click', color)
+    const color = () => {box.style.backgroundColor = "#000"};
+    box.addEventListener("click", color)
   }
 }
 
