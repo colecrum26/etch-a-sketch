@@ -1,15 +1,16 @@
+const ec = document.getElementById("etch-container");
+let numBoxes = 16;
 
-const ec = document.getElementById("etch-container")
-let numBoxes=16;
+function sketch(numBoxes) {
+  for (let i = 0; i < numBoxes; i++) {
+    let box = document.createElement("div");
+    box.classList.add("grid-box");
+    ec.appendChild(box);
 
-    function createDivs(numBoxes) {
-        for (let i = 0; i < numBoxes; i++) {
-            let box = document.createElement("div");
-            box.className = "grid-box";
-            ec.appendChild(box);
-        }
-    }
+    const color = () => {box.style.backgroundColor = '#000'};
+    box.addEventListener('mouseover', color)
+  }
+}
 
-    console.log(createDivs);
-    createDivs(numBoxes);
+sketch(numBoxes);
 
