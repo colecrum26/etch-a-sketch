@@ -1,6 +1,6 @@
 const ec = document.getElementById("etch-container");
 const input = document.getElementById("input");
-let numBoxes;
+let numBoxes = 15;
 
 input.addEventListener("change", (e) => {
     numBoxes = parseInt(e.target.value);
