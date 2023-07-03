@@ -2,6 +2,7 @@ const ec = document.getElementById("etch-container");
 const input = document.getElementById("input");
 let numBoxes = 15;
 
+// TODO - get input value
 input.addEventListener("change", (e) => {
     numBoxes = parseInt(e.target.value);
 });
