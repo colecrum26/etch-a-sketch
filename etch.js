@@ -1,11 +1,12 @@
 const ec = document.getElementById("etch-container");
-const input = document.getElementById("input");
-let numBoxes = 15;
 
-// TODO - get input value
+const input = document.getElementById("input");
+let numBoxes = input.value;
 input.addEventListener("change", (e) => {
-    numBoxes = parseInt(e.target.value);
-});
+  numBoxes = e.target.value;
+})
+
+console.log(numBoxes);
 
 function sketch(numBoxes) {
   for (let i = 0; i < numBoxes; i++) {
@@ -14,7 +15,7 @@ function sketch(numBoxes) {
     ec.appendChild(box);
 
     const color = () => {box.style.backgroundColor = "#000"};
-    box.addEventListener("click", color)
+    box.addEventListener("click", color);
   }
 }
 
