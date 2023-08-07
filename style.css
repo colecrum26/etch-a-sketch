@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 #input-container {
@@ -9,13 +10,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 28px;
+    margin: 28px 0 28px 0;
 }
 
 #etch-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
