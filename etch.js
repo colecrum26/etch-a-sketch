@@ -29,6 +29,7 @@ function boxSizing() {
   };
   ec.style.width = root * (pixelSize + borderSize) + 5 + "px";
   ec.style.height = root * (pixelSize + borderSize) + 5 + "px";
+  ec.style.alignSelf = "center";
 }
 
 function sketch(numBoxes) {
