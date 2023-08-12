@@ -1,0 +1,4 @@
+Choice of colors in the same render: r, b, y
+
+Prebuilt boxes or user input? Eg:
+buttons for 256 etc or L, M, S 
