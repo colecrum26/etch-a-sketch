@@ -1,4 +1,7 @@
 Choice of colors in the same render: r, b, y
+or
+Integrate a color picker
+https://medium.com/@ipenywis/lets-create-a-color-picker-from-scratch-native-javascript-de8e174a4f7f
 
 Prebuilt boxes or user input? Eg:
 buttons for 256 etc or L, M, S 
