@@ -12,12 +12,13 @@ let numBoxes;
 //     }
 // });
 
-document.getElementById("btn-small").addEventListener("click", function(e) {
-   numBoxes = 100;
-   console.log(numBoxes)
+document.getElementById("btn-small").addEventListener("click", () => {
+    numBoxes = 100;
+    console.log(numBoxes);
 });
 
 function sketch(numBoxes) {
+    console.log(numBoxes);
     ec.innerHTML = "";
   
     for (let i = 0; i < numBoxes; i++) {
