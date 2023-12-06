@@ -46,5 +46,5 @@ function sketch(numBoxes) {
   }
 }
 
-sketch(numBoxes);
+// sketch(numBoxes);
 

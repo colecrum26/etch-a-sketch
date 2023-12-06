@@ -2,7 +2,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
 }
 
 #input-container {
@@ -19,16 +18,10 @@ body {
     justify-content: center;
     padding: 0;
     margin: 0;
-    border-style: solid;
-    border-color: red;
 }
 
 .grid-box {
-    border-style: solid;
+    border: 2px solid black;
     padding: 0;
     margin: 0;
-    border-width: 2px;
-    border-color: black;
-    height: 100px;
-    width: 100px;
 }
