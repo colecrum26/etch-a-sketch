@@ -1,5 +1,5 @@
 const ec = document.getElementById("etch-container");
-const pixelSize = 50;
+const pixelSize = 49;
 
 function sketch(numBoxes) {
   ec.innerHTML = "";
