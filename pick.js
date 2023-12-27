@@ -1,4 +1,5 @@
 const ec = document.getElementById("etch-container");
+const colorPicker = document.getElementById("color")
 const pixelSize = 49;
 
 function sketch(numBoxes) {
@@ -11,21 +12,21 @@ function sketch(numBoxes) {
     box.classList.add("grid-box");
     ec.appendChild(box);
 
-    const color = () => {box.style.backgroundColor = "#000"};
+    const color = () => {box.style.backgroundColor = colorPicker.value};
     box.addEventListener("click", color);
   }
 }
 
 document.getElementById("btn-small").addEventListener("click", () => {
-  let numBoxes = 100;
+  let numBoxes = 95;
   sketch(numBoxes);
 });
 document.getElementById("btn-medium").addEventListener("click", () => {
-  let numBoxes = 256;
+  let numBoxes = 247;
   sketch(numBoxes);
 })
 document.getElementById("btn-large").addEventListener("click", () => {
-  let numBoxes = 484;
+  let numBoxes = 475;
   sketch(numBoxes);
 })
 
